@@ -56,6 +56,7 @@ Rails.application.routes.draw do
 
 post '/buildings/upgrade', to: 'buildings#upgrade' 
 get '/buildings/list', to: 'buildings#list'
+get '/buildings/levels/list', to: 'buildings#levels'
 
 get '/districts/info', to: 'districts#info'
 

@@ -1,0 +1,2 @@
+<%='Hello World!'%>
+<%=@levels.to_json.html_safe%>

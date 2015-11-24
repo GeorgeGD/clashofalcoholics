@@ -10,4 +10,9 @@ class BuildingsController < ApplicationController
 			@error = true
 		end
 	end
-end
+
+	def levels
+		building = Building.find(params["building_id"])
+		@levels = BuildingLevel.where(building_id: building.id)
+	end
+end	
